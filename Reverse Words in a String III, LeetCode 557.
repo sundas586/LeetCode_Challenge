@@ -1,0 +1,14 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        revlist = []
+        lst = s.split()   #["Let's", 'take', 'LeetCode', 'contest']
+        for word in lst:
+            revlist.append(word[::-1]) 
+        return " ".join(revlist) # " " this white space is our separator in original string
+   
+    
+           
+     
+            
+# used slicing instead of .reverse() because it was elemenating white spaces        
+#join() method returns a string by joining all the elements of an iterable (list, string, tuple), separated by the given separator.
