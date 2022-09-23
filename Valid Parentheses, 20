@@ -4,7 +4,7 @@ class Solution:
         leftSymbols= []
         for i in s:
             if i in ['(', '{', '[']:
-                leftSymbols.append(c)
+                leftSymbols.append(i)
             elif i == ')' and len(leftSymbols) != 0 and leftSymbols[-1] == '(':
                 leftSymbols.pop()
             elif i == '}' and len(leftSymbols) != 0 and leftSymbols[-1] == '{':
