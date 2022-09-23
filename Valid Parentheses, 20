@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         # Stack for left symbols
-        leftSymbolslist = []
+        leftSymbols= []
         for i in s:
             if i in ['(', '{', '[']:
                 leftSymbols.append(c)
